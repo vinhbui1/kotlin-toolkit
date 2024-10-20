@@ -11,12 +11,12 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/groupView_groupLinks"
-        android:name="org.readium.r2.testapp.opds"
+        android:name="org.readium.r2.pdf2epub.opds"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        tools:context="org.readium.r2.testapp.opds"
+        tools:context="org.readium.r2.pdf2epub.opds"
         tools:listitem="@layout/item_recycle_button" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

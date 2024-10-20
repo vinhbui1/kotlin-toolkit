@@ -17,7 +17,7 @@ android {
         minSdk = 21
         targetSdk = 34
 
-        applicationId = "org.readium.r2reader"
+        applicationId = "org.pdf2epub.reader"
 
         versionName = "3.0.0"
         versionCode = 300000
@@ -62,7 +62,7 @@ android {
             assets.srcDirs("src/main/assets")
         }
     }
-    namespace = "org.readium.r2.testapp"
+    namespace = "org.readium.r2.pdf2epub"
 }
 
 dependencies {
@@ -83,6 +83,8 @@ dependencies {
     implementation(project(":readium:readium-lcp"))
     // Only required if you want to support PDF files using PDFium.
     implementation(project(":readium:adapters:pdfium"))
+    //implementation (libs.pdfbox.android)
+    implementation (libs.itext7.core)
 
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.appcompat)
@@ -121,4 +123,13 @@ dependencies {
 
     androidTestImplementation(libs.androidx.ext.junit)
     androidTestImplementation(libs.androidx.expresso.core)
+
+
+    implementation("nl.siegmann.epublib:epublib-core:3.1") {
+        exclude(group = "org.slf4j")
+        exclude(group = "xmlpull")
+    }
+    implementation (libs.slf4j.android)
+    implementation (libs.commons.text)
+
 }

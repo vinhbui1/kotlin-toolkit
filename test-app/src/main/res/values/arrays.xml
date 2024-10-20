@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="documentSelectorArray">
-        <item>Import to app storage</item>
-        <item>Read from shared storage</item>
+        <item>Import Pdf and convert to Epub</item>
+        <item>Import Your Book</item>
         <item>Stream from the Web</item>
     </string-array>
 

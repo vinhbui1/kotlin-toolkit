@@ -12,10 +12,12 @@ dependencyResolutionManagement {
         mavenCentral()
         maven(url = "https://s3.amazonaws.com/repo.commonsware.com")
         maven(url = "https://customers.pspdfkit.com/maven")
+        maven(url = "https://github.com/psiegman/mvn-repo/raw/master/releases")
+
     }
 }
 
-rootProject.name = "Readium"
+rootProject.name = "PDF2Epub"
 
 include(":readium:adapters:pdfium:document")
 project(":readium:adapters:pdfium:document")

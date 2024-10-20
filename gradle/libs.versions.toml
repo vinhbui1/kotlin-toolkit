@@ -1,5 +1,7 @@
 [versions]
 
+commons-text = "1.10.0"
+itext7-core = "7.2.3"
 kotlin = "1.9.24"
 agp = "8.4.0"
 desugar_jdk_libs = "2.0.4"
@@ -62,6 +64,7 @@ ktlint = "11.5.1"
 # We cannot upgrade to 1.9.0 as it conflicts with liblcp.
 # See https://github.com/readium/kotlin-toolkit/issues/29
 #noinspection GradleDependency
+pdfbox-android = "2.0.27.0"
 pdfium = "1.8.2"
 pdf-viewer = "2.8.2"
 #noinspection GradleDependency
@@ -70,6 +73,7 @@ pspdfkit = "8.4.1"
 
 robolectric = "4.12.2"
 
+slf4j-android = "1.7.25"
 timber = "5.0.1"
 
 
@@ -121,6 +125,7 @@ androidx-webkit = { group = "androidx.webkit", name = "webkit", version.ref = "a
 
 assertj = { group = "org.assertj", name = "assertj-core", version.ref = "assertj" }
 
+commons-text = { module = "org.apache.commons:commons-text", version.ref = "commons-text" }
 desugar_jdk_libs = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugar_jdk_libs" }
 google-exoplayer-core = { group = "com.google.android.exoplayer", name = "exoplayer-core", version.ref = "google-exoplayer" }
 google-exoplayer-extension-media2 = { group = "com.google.android.exoplayer", name = "extension-media2", version.ref = "google-exoplayer" }
@@ -129,6 +134,7 @@ google-exoplayer-ui = { group = "com.google.android.exoplayer", name = "exoplaye
 google-exoplayer-workmanager = { group = "com.google.android.exoplayer", name = "extension-workmanager", version.ref = "google-exoplayer" }
 google-material = { group = "com.google.android.material", name = "material", version.ref = "google-material" }
 
+itext7-core = { module = "com.itextpdf:itext7-core", version.ref = "itext7-core" }
 joda-time = { group = "joda-time", name = "joda-time", version.ref = "joda-time" }
 jsoup = { group = "org.jsoup", name = "jsoup", version.ref = "jsoup" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -142,12 +148,14 @@ kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-cor
 kotlinx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "kotlinx-datetime" }
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization-json" }
 
+pdfbox-android = { module = "com.tom-roush:pdfbox-android", version.ref = "pdfbox-android" }
 pdfium = { group = "com.github.barteksc", name = "pdfium-android", version.ref="pdfium" }
 picasso = { group = "com.squareup.picasso", name = "picasso", version.ref = "picasso" }
 pspdfkit = { group = "com.pspdfkit", name = "pspdfkit", version.ref ="pspdfkit" }
 
 robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "robolectric" }
 
+slf4j-android = { module = "org.slf4j:slf4j-android", version.ref = "slf4j-android" }
 timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber" }
 
 plugin-android = { module = "com.android.tools.build:gradle", version.ref = "agp" }

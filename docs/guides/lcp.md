@@ -302,4 +302,4 @@ lcpLicense.renewLoan(renewListener)
 
 The APIs may fail with an `LcpError`. These errors **must** be displayed to the user with a suitable message.
 
-For an example, take a look at [`LcpUserError.kt`](../../test-app/src/main/java/org/readium/r2/testapp/domain/LcpUserError.kt) in the Test App.
+For an example, take a look at [`LcpUserError.kt`](../../test-app/src/main/java/org/readium/r2/pdf2epub/domain/LcpUserError.kt) in the Test App.

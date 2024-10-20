@@ -199,14 +199,12 @@ public class AssetRetriever private constructor(
     ): Try<Asset, RetrieveError> {
         val properties = resource.properties()
             .getOrElse { return Try.failure(RetrieveError.Reading(it)) }
-
         val internalHints = FormatHints(
             mediaType = properties.mediaType,
             fileExtension = properties.filename
                 ?.substringAfterLast(".")
                 ?.let { FileExtension((it)) }
         )
-
         return assetSniffer
             .sniff(Either.Left(resource), hints + internalHints)
             .mapFailure {
